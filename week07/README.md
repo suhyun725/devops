@@ -1,13 +1,14 @@
-# DevOps 07주차 실습 - 도커 컴포즈 (Docker Compose)
+# 7주차: 도커 컴포즈
 
 ## 1. Docker Compose PS 결과 (Healthcheck 포함)
-NAME                IMAGE            COMMAND                   SERVICE   CREATED          STATUS                    PORTS
-guestbook-nginx-1   nginx:alpine     "/docker-entrypoint.…"   nginx     7 minutes ago    Up 7 minutes              0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
-guestbook-redis-1   redis:7-alpine   "docker-entrypoint.s…"   redis     35 minutes ago   Up 11 minutes (healthy)   6379/tcp
-guestbook-web-1     guestbook-web    "python app.py"           web       7 minutes ago    Up 7 minutes (healthy)    5000/tcp
-guestbook-web-2     guestbook-web    "python app.py"           web       7 minutes ago    Up 7 minutes (healthy)    5000/tcp
-guestbook-web-3     guestbook-web    "python app.py"           web       7 minutes ago    Up 7 minutes (healthy)    5000/tcp
-
+```text
+NAME                IMAGE            COMMAND                  SERVICE   CREATED        STATUS                  PORTS
+guestbook-nginx-1   nginx:alpine     "/docker-entrypoint.…"   nginx     7 minutes ago  Up 7 minutes            0.0.0.0:8080->80/tcp, [::]:8080->80/tcp
+guestbook-redis-1   redis:7-alpine   "docker-entrypoint.s…"   redis     35 minutes ago Up 11 minutes (healthy) 6379/tcp
+guestbook-web-1     guestbook-web    "python app.py"          web       7 minutes ago  Up 7 minutes (healthy)  5000/tcp
+guestbook-web-2     guestbook-web    "python app.py"          web       7 minutes ago  Up 7 minutes (healthy)  5000/tcp
+guestbook-web-3     guestbook-web    "python app.py"          web       7 minutes ago  Up 7 minutes (healthy)  5000/tcp
+```
 
 ## 2. Scale 적용 후 웹 컨테이너 호스트명 변경 결과
 ![캡처](./scale1.png)

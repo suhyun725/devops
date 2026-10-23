@@ -1,4 +1,4 @@
-# week06 - Dockerfile & ghcr.io 배포
+# week06: 도커 파일
 
 ## 1. 내 이미지 주소
 
