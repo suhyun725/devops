@@ -1,8 +1,7 @@
 # Week 09: 쿠버네티스
 
 ## 1. kubectl get nodes 결과
-NAME       STATUS   ROLES           AGE    VERSION
-minikube   Ready    control-plane   122m   v1.37.0
+![kubectl get nodes 결과](nodes.png)
 
 ## 2. 자가 치유 관찰 (Pod 재생성)
 - 기존 Pod 삭제 후 쿠버네티스가 선언된 상태(replicas)를 유지하기 위해 자동으로 새 Pod를 생성한 것을 확인했습니다.
